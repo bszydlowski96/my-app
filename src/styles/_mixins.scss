@@ -1,5 +1,40 @@
-@mixin red-box {
-  background: red;
-  color: white;
-  padding: 10px;
+@mixin card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+@mixin sectionTitle {
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+@mixin btnPrimary {
+  background: #0ea5e9;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: filter .15s ease;
+  &:hover { filter: brightness(.95); }
+  &:disabled { opacity: .6; cursor: not-allowed; }
+}
+
+@mixin btnGhost {
+  background: #e5e7eb;
+  color: #111827;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: filter .15s ease;
+  &:hover { filter: brightness(.95); }
+}
+
+@mixin inputBase {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
