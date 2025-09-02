@@ -1,0 +1,11 @@
+
+@mixin red-box {
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+
+.alert {
+  @include red-box;
+}
