@@ -1,0 +1,23 @@
+@use "../../styles/mixins" as m;
+
+.wrapper { @include m.card; margin-bottom: 12px;  color: #111827; }
+.title   { @include m.sectionTitle; }
+
+.value {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.btn       { @include m.btnPrimary; }
+.btnGhost  { @include m.btnGhost; }
+.input     { @include m.inputBase; }
+
+.muted { margin-top: 6px; font-size: 14px; color: #555; }
